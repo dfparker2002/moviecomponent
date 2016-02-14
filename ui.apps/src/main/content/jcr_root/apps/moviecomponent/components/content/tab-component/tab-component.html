@@ -1,0 +1,40 @@
+<section  role="main">
+    <div class="container">
+
+      <div class="row">
+        <div class="twelve columns">
+          <article >
+            <h2 style="margin: 6px 5%">${properties.header}</h2>
+            <div class='tabs tabs_animate'>
+              <ul class='horizontal'>
+                <li><a href="#tab-1">${properties.movieDetails}</a></li>
+                <li><a href="#tab-2">${properties.experience}</a></li>
+                <li><a href="#tab-3">${properties.random}</a></li>
+                <li><a href="#tab-4">${properties.reviews}</a></li>
+                <li><a href="#tab-5">${properties.contact}</a></li>
+              </ul>
+              <div id='tab-1'><span>Tab 1 Content</span>
+           		<div data-sly-resource="${ @path='tab-1',resourceType='wcm/foundation/components/parsys'}"></div>
+              	</div>
+              <div id='tab-2'><span>Tab 2 Content</span>
+              	<div data-sly-resource="${ @path='tab-2',resourceType='wcm/foundation/components/parsys'}"></div>
+                </div>
+              <div id='tab-3'><span>Tab 3 Content</span>
+              	<div data-sly-resource="${ @path='tab-3',resourceType='wcm/foundation/components/parsys'}"></div>
+                </div>
+              <div id='tab-4'><span>Tab 4 Content</span>
+              	<div data-sly-resource="${ @path='tab-4',resourceType='wcm/foundation/components/parsys'}"></div>
+                </div>
+              <div id='tab-5'><span>Tab 5 Content</span>
+              	<div data-sly-resource="${ @path='tab-5',resourceType='wcm/foundation/components/parsys'}"></div>
+                </div>
+
+            </div>
+          </article>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </section>
