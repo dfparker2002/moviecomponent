@@ -115,9 +115,14 @@
                 <rating
                     jcr:primaryType="cq:Widget"
                     fieldLabel="Our Rating"
+                    name="./rating"
                     type="select"
                     xtype="selection">
                     <options jcr:primaryType="cq:WidgetCollection">
+                        <_x0030_-star
+                            jcr:primaryType="cq:Widget"
+                            text="0 Star (Waste)"
+                            value="0"/>
                         <_x0031_-star
                             jcr:primaryType="cq:Widget"
                             text="1 Star (Poor)"
@@ -143,6 +148,7 @@
                 <experience
                     jcr:primaryType="cq:Widget"
                     fieldLabel="Our Experience"
+                    name="./movieExperience"
                     xtype="richtext"/>
             </items>
         </experience>
