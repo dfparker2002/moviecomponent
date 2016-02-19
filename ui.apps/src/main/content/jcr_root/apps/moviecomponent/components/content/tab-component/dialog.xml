@@ -13,6 +13,7 @@
                 <main-header
                     jcr:primaryType="cq:Widget"
                     allowBlank="false"
+                    defaultValue="Welcome, have a great movie time"
                     fieldLabel="Main header text"
                     fieldWidth="400"
                     name="./header"
@@ -20,6 +21,7 @@
                 <movie-details
                     jcr:primaryType="cq:Widget"
                     allowBlank="false"
+                    defaultValue="Movie"
                     fieldLabel="Movie Details"
                     fieldWidth="400"
                     name="./movieDetails"
@@ -27,24 +29,28 @@
                 <experience
                     jcr:primaryType="cq:Widget"
                     allowBlank="false"
+                    defaultValue="Movie Experience"
                     fieldLabel="Experience"
                     name="./experience"
                     xtype="textfield"/>
                 <reviews
                     jcr:primaryType="cq:Widget"
                     allowBlank="false"
+                    defaultValue="Reviews"
                     fieldLabel="Movie Reviews"
                     name="./reviews"
                     xtype="textfield"/>
                 <contact-us
                     jcr:primaryType="cq:Widget"
                     allowBlank="false"
+                    defaultValue="Get in touch"
                     fieldLabel="Contact Us"
                     name="./contact"
                     xtype="textfield"/>
                 <random-movie
                     jcr:primaryType="cq:Widget"
                     allowBlank="false"
+                    defaultValue="Upcoming..."
                     fieldLabel="Upcoming Movies"
                     name="./random"
                     xtype="textfield"/>
@@ -71,6 +77,7 @@
                     jcr:primaryType="cq:Widget"
                     fieldLabel="Trailer Video URL"
                     name="./video"
+                    rootPath="/content/dam/moviecomponent/trailers"
                     xtype="pathfield"/>
                 <name
                     jcr:primaryType="cq:Widget"
@@ -185,12 +192,15 @@
             <items jcr:primaryType="cq:WidgetCollection">
                 <movies-path
                     jcr:primaryType="cq:Widget"
+                    allowBlank="false"
                     fieldDescription="Select the path from where banner will be displayed"
                     fieldLabel="Path to Movies"
                     name="./moviesPath"
+                    rootPath="/content/dam/moviecomponent/"
                     xtype="pathfield"/>
                 <number
                     jcr:primaryType="cq:Widget"
+                    allowBlank="false"
                     fieldLabel="Number of Random Movies"
                     name="./maxMovies"
                     regex="/[0-9]/"

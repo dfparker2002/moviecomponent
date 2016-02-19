@@ -77,7 +77,7 @@ div#moviedata {
                             </li>
                         </ul>
                         <div id='tab-1'>
-                        <div id="mvideo">
+                        <div data-sly-test="${properties.fileReference && properties.video }" id="mvideo">
 
                             <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="${properties.fileReference}" data-setup="{}">
                                 <source src="${properties.video}" type='video/mp4'>
@@ -96,8 +96,6 @@ div#moviedata {
                                 <p>Language : ${properties.language}</p>
                                 <p>Note : ${properties.note}</p>
                             </div>
-
-                            <div data-sly-resource="${ @path='tab-1',resourceType='wcm/foundation/components/parsys'}"></div>
                         </div>
                         <div id='tab-2'>
                             <p id="experience">Our Experience with ${properties.movieName}</p>
@@ -105,8 +103,6 @@ div#moviedata {
                             </p>
                             <p id="rating">Experience..... </p>
                             <div id="experiencetext"> ${properties.movieExperience @ context="html"}</div>
-
-                            <div data-sly-resource="${ @path='tab-2',resourceType='wcm/foundation/components/parsys'}"></div>
                         </div>
                         <div id='tab-3'>
 
@@ -130,7 +126,10 @@ div#moviedata {
 
                         </div>
                         <div id='tab-5'>
-                        <div  data-sly-use.v="com.moviecomponent.moviecomponent.core.service.MovieService">
+                        <div data-sly-test="${ !properties.maxMovies || !properties.moviesPath}">
+                        <p style="margin-left:150px;margin-top:40px"> Please author Path to Movies and Number of Movies</p>
+                        </div>
+                        <div data-sly-test="${properties.maxMovies && properties.moviesPath}" data-sly-use.v="com.moviecomponent.moviecomponent.core.service.MovieService">
                             <p data-sly-list="${v.files}"> 
                                 <img src="${item}" height=250 width=400 style="padding:4px"></img>
                             </p>   
