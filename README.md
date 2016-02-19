@@ -11,6 +11,11 @@ Its allow user to author Tab based movie component which includes:-
 
 Once installed, I have already created a page to see component: http://localhost:4502/cf#/content/moviecomponent/en/sample-movie-component.html
 
+I have attached few screenshots of the components
+![Main Movie Details](https://cloud.githubusercontent.com/assets/6499027/13187043/f7107dfc-d76e-11e5-9e0b-5a4d4ebedb7d.png "Main Movie Details")
+
+![Main Movie Details](https://cloud.githubusercontent.com/assets/6499027/13187044/f7123ce6-d76e-11e5-8969-631843b98b83.png "Main Movie Details")
+
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
 
 ## Modules
