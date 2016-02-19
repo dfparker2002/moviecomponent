@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-02-19T23:34:22.667+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/moviecomponent/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Sample Movie Component"
+        sling:resourceType="moviecomponent/components/structure/page">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="moviecomponent/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="moviecomponent/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="moviecomponent/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="moviecomponent/components/content/text"
+                text="&lt;p>This is a content page&lt;/p>"
+                textIsRich="true"/>
+            <tab_component
+                jcr:created="{Date}2016-02-19T23:32:52.635+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-02-19T23:34:22.650+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="moviecomponent/components/content/tab-component"
+                contact="Get in touch"
+                contactDescription=" m "
+                contactEmail="nklnkl"
+                contactNumber="3333"
+                contactPerson="nklnlk"
+                contactPosition="knkln"
+                directors="knkl"
+                experience="Movie Experience"
+                fileReference="/content/dam/moviecomponent/trailers/deadpool-poster.jpg"
+                header="Welcome, have a great movie time"
+                imageRotate="0"
+                language="nk"
+                maxMovies="4"
+                movieDetails="Movie"
+                movieExperience="&lt;p>lnlnl&lt;/p>&#xa;"
+                movieLength="klnklnkl"
+                movieName="Deadpool"
+                moviesPath="/content/dam/moviecomponent//Upcoming"
+                note="lnkl"
+                productionHouse="nklnkl"
+                random="Upcoming..."
+                rating="5"
+                releaseDate="kjkl"
+                review1description="nlnln"
+                review1person=",bbl"
+                review2description="nkln"
+                review2person="lnlknkl"
+                reviews="Reviews"
+                video="/content/dam/moviecomponent/trailers/Deadpool.mp4"/>
+        </par>
+    </jcr:content>
+</jcr:root>
