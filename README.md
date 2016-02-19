@@ -1,4 +1,15 @@
-# Sample AEM project template
+# AEM Movie Component
+
+Its allow user to author Tab based movie component which includes:-
+
+1. Details of Movie
+2. Video trailer and Poster Images
+3. Reviews by 2 people
+4. Experience by author for movie
+5. People who can be contacted for details
+6. Some posters of upcoming movies, select path  as /content/dam/moviecomponent/Upcoming
+
+Once installed, I have already created a page to see component: http://localhost:4502/cf#/content/moviecomponent/en/sample-movie-component.html
 
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
 

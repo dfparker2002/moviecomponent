@@ -193,7 +193,7 @@
                     fieldDescription="Select the path from where banner will be displayed"
                     fieldLabel="Path to Movies"
                     name="./moviesPath"
-                    rootPath="/content/dam/moviecomponent/"
+                    rootPath="/content/dam/moviecomponent"
                     xtype="pathfield"/>
                 <number
                     jcr:primaryType="cq:Widget"
