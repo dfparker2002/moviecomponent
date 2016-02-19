@@ -62,15 +62,12 @@
             <items jcr:primaryType="cq:WidgetCollection">
                 <image
                     jcr:primaryType="cq:Widget"
-                    cropParameter="./imageCrop"
+                    allowUpload="false"
                     ddGroups="[media]"
                     fileNameParameter="./fileName"
                     fileReferenceParameter="./fileReference"
                     height="200"
-                    mapParameter="./imageMap"
                     name="./file"
-                    requestSuffix=".img.png"
-                    rotateParameter="./imageRotate"
                     title="Movie Image"
                     xtype="html5smartimage"/>
                 <video
