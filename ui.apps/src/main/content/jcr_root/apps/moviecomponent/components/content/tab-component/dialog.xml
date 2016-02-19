@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Dialog"
     autoWidth="true"
     title="Properties"
@@ -67,6 +67,11 @@
                     rotateParameter="./imageRotate"
                     title="Movie Image"
                     xtype="html5smartimage"/>
+                <video
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Trailer Video URL"
+                    name="./video"
+                    xtype="pathfield"/>
                 <name
                     jcr:primaryType="cq:Widget"
                     fieldLabel="Movie Name"
@@ -79,13 +84,9 @@
                     xtype="textfield"/>
                 <directors
                     jcr:primaryType="cq:Widget"
-                    fieldLabel="Directors"
+                    fieldLabel="Director"
                     name="./directors"
-                    xtype="multifield">
-                    <fieldConfig
-                        jcr:primaryType="nt:unstructured"
-                        xtype="textfield"/>
-                </directors>
+                    xtype="textfield"/>
                 <length
                     jcr:primaryType="cq:Widget"
                     fieldLabel="Movie Length"
