@@ -69,11 +69,11 @@ div#moviedata {
                             </li>
                             <li><a href="#tab-2">${properties.experience}</a>
                             </li>
-                            <li><a href="#tab-3">${properties.random}</a>
+                            <li><a href="#tab-3">${properties.reviews}</a>
                             </li>
-                            <li><a href="#tab-4">${properties.reviews}</a>
+                            <li><a href="#tab-4">${properties.contact}</a>
                             </li>
-                            <li><a href="#tab-5">${properties.contact}</a>
+                            <li><a href="#tab-5">${properties.random}</a>
                             </li>
                         </ul>
                         <div id='tab-1'>
@@ -108,10 +108,7 @@ div#moviedata {
 
                             <div data-sly-resource="${ @path='tab-2',resourceType='wcm/foundation/components/parsys'}"></div>
                         </div>
-                        <div id='tab-3'><span>Tab 3 Content</span>
-                            <div data-sly-resource="${ @path='tab-3',resourceType='wcm/foundation/components/parsys'}"></div>
-                        </div>
-                        <div id='tab-4'>
+                        <div id='tab-3'>
 
                             <div id="reviewtext"><i> ${properties.review2description @ context="html"}</i>
                             </div>
@@ -122,13 +119,23 @@ div#moviedata {
                             <div id="reviewtext"><i> ${properties.review2description @ context="html"}</i>
                             </div>
                             <p id="reviewer"> -- by ${properties.review2person}</p>
+
                         </div>
-                        <div id='tab-5'>
-                            <div id="experiencetext">${properties.contactDescription}</div>
+                        <div id='tab-4'>
+                        <div id="experiencetext">${properties.contactDescription}</div>
                             <p id="rating"><span>Contact Person Name </span> ${properties.contactPerson}</p>
                             <p id="rating"><span>Contact Person Position </span>${properties.contactPosition}</p>
                             <p id="rating"><span>Contact Person Email </span>${properties.contactEmail}</p>
                             <p id="rating"><span>Contact Person Number </span>${properties.contactNumber}</p>
+
+                        </div>
+                        <div id='tab-5'>
+                        <div  data-sly-use.v="com.moviecomponent.moviecomponent.core.service.MovieService">
+                            <p data-sly-list="${v.files}"> 
+                                <img src="${item}" height=250 width=400 style="padding:4px"></img>
+                            </p>   
+                        </div>
+
                         </div>
                   </div>
                 </article>

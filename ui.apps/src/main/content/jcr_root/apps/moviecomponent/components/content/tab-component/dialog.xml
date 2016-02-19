@@ -30,12 +30,6 @@
                     fieldLabel="Experience"
                     name="./experience"
                     xtype="textfield"/>
-                <random-movie
-                    jcr:primaryType="cq:Widget"
-                    allowBlank="false"
-                    fieldLabel="Random Movies"
-                    name="./random"
-                    xtype="textfield"/>
                 <reviews
                     jcr:primaryType="cq:Widget"
                     allowBlank="false"
@@ -47,6 +41,12 @@
                     allowBlank="false"
                     fieldLabel="Contact Us"
                     name="./contact"
+                    xtype="textfield"/>
+                <random-movie
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Upcoming Movies"
+                    name="./random"
                     xtype="textfield"/>
             </items>
         </panel>
@@ -153,22 +153,6 @@
                     xtype="richtext"/>
             </items>
         </experience>
-        <random-movie
-            jcr:primaryType="cq:Panel"
-            title="Random Movie">
-            <items jcr:primaryType="cq:WidgetCollection">
-                <movies-path
-                    jcr:primaryType="cq:Widget"
-                    fieldDescription="Select the path from where random movie banner will be displayed"
-                    fieldLabel="Path to Movies"
-                    xtype="pathfield"/>
-                <number
-                    jcr:primaryType="cq:Widget"
-                    fieldLabel="Number of Random Movies"
-                    regex="/[0-9]/"
-                    xtype="textfield"/>
-            </items>
-        </random-movie>
         <reviews
             jcr:primaryType="cq:Panel"
             title="Reviews">
@@ -195,6 +179,24 @@
                     xtype="textarea"/>
             </items>
         </reviews>
+        <random-movie
+            jcr:primaryType="cq:Panel"
+            title="Upcoming Movies">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <movies-path
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select the path from where banner will be displayed"
+                    fieldLabel="Path to Movies"
+                    name="./moviesPath"
+                    xtype="pathfield"/>
+                <number
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Number of Random Movies"
+                    name="./maxMovies"
+                    regex="/[0-9]/"
+                    xtype="textfield"/>
+            </items>
+        </random-movie>
         <contact-us
             jcr:primaryType="cq:Panel"
             title="Contact Us">
