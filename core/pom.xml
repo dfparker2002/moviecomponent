@@ -39,6 +39,8 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                    <Export-Package>com.moviecomponent.moviecomponent.core.service;ver
+ sion="0.0.1"</Export-Package>
                         <!--
                         <Embed-Dependency>
                             artifactId1,
@@ -48,7 +50,8 @@
                         <Sling-Model-Packages>
                             com.moviecomponent.moviecomponent.core
                         </Sling-Model-Packages>
-                    </instructions>
+                    </instructions>	
+                    
                 </configuration>
             </plugin>
         </plugins>
